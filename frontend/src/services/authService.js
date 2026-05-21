@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for auth service
-const API_URL = 'https://gateway-service-jlhe.onrender.com/api/auth';
+const API_URL = 'https://auth-service-rflf.onrender.com/api/auth';
 // const API_URL = 'http://localhost:8001/api/auth';
 
 // Create axios instance with default config
