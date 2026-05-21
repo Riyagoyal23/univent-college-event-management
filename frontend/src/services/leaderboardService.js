@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for leaderboard service
-const API_URL = 'https://univent-leaderboard-service.onrender.com/api/leaderboard';
+const API_URL = 'https://gateway-service-jihe.onrender.com/api/leaderboard';
 
 // Create axios instance with default config
 const leaderboardApi = axios.create({
