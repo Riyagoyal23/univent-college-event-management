@@ -41,7 +41,7 @@ app.use(express.json()); // Parse JSON request body
 // Service endpoints
 const AUTH_SERVICE = process.env.AUTH_SERVICE || 'http://localhost:8001';
 const EVENT_SERVICE = process.env.EVENT_SERVICE || 'http://localhost:8002';
-const NOTIFICATION_SERVICE = process.env.NOTIFICATION_SERVICE || 'http://localhost:8003';
+const NOTIFICATION_SERVICE = process.env.NOTIFICATION_SERVICE || 'https://notification-service-c83g.onrender.com';
 const LEADERBOARD_SERVICE = process.env.LEADERBOARD_SERVICE || 'http://localhost:8004';
 const SETTINGS_SERVICE = process.env.SETTINGS_SERVICE || 'http://localhost:8005';
 
