@@ -32,15 +32,16 @@ export const SocketProvider = ({ children }) => {
     });
 
     // Set up event listeners
-    socketInstance.on('connect', () => {
-      // console.log('Socket connected');
-      setConnected(true);
-      
-      // Join user role room
-      if (user && user.role) {
-        socketInstance.emit('joinUserRole', user.role);
-      }
-    });
+    // Connect to socket server
+const socketInstance = io(
+  import.meta.env.VITE_NOTIFICATION_SERVICE_URL || 
+  'https://notification-service-c83g.onrender.com',
+{
+  withCredentials: true,
+  auth: {
+    token: localStorage.getItem('token')
+  }
+});
 
     socketInstance.on('disconnect', () => {
       console.log('Socket disconnected');
